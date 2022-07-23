@@ -1,0 +1,16 @@
+{
+  "name": "nest/nest",
+  "description": "A Next Gen PHP Framework.",
+  "autoload": {
+    "psr-4": {
+      "Nest\\Nest\\": "core/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Gurvir Singh Baraich",
+      "email": "officialgurvir2007@gmail.com"
+    }
+  ],
+  "require": {}
+}
