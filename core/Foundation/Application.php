@@ -13,7 +13,7 @@ class Application
 
     public function terminate()
     {
-       exit;
+        exit;
     }
 
     public static function make(array $environment)
