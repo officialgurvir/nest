@@ -31,4 +31,5 @@ require __DIR__.'/helpers/index.php';
 |--------------------------------------------------------------------------
 */
 
-$kernal = Kernal::handle();
+$kernal = Kernal::handle(__DIR__);
+$kernal->terminate();

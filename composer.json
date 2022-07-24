@@ -12,5 +12,7 @@
       "email": "officialgurvir2007@gmail.com"
     }
   ],
-  "require": {}
+  "require": {
+    "vlucas/phpdotenv": "^5.4"
+  }
 }
