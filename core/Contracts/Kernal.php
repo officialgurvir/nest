@@ -1,9 +1,9 @@
 <?php
 
-namespace Nest\Contracts;
+namespace Framework\Contracts;
 
 use Dotenv\Dotenv;
-use Nest\Foundation\Application;
+use Framework\Foundation\Application;
 
 class Kernal
 {

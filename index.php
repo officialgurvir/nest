@@ -1,6 +1,6 @@
 <?php
 
-use Nest\Contracts\Kernal;
+use Framework\Contracts\Kernal;
 
 /**
  * Nest - A Next Generation PHP Framework.
