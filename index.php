@@ -4,8 +4,7 @@ use Nest\Contracts\Kernal;
 
 /**
  * Nest - A Next Generation PHP Framework.
- * 
- * @package Nest
+ *
  * @author Gurvir Singh <officialgurvir2007@gmail.com>
  */
 
