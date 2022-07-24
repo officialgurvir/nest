@@ -9,7 +9,7 @@ class Router
       "POST" => []
    ];
 
-   public static function get($path, $callback)
+   private static function _get($path, $callback)
    {
       self::$paths['GET'][$path] = [
          new $callback[0],
@@ -17,7 +17,7 @@ class Router
       ];
    }
 
-   public static function post($path, $callback)
+   private static function _post($path, $callback)
    {
       self::$paths['POST'][$path] = [
          new $callback[0],
@@ -30,7 +30,7 @@ class Router
     * 
     * @return boolean
     */
-   private static function functionResolver($callback): bool
+   private function _functionResolver($callback): bool
    {
       return false;
    }
@@ -41,7 +41,7 @@ class Router
     * @param array $callback
     * @return boolean
     */
-   private static function classResolver(array $callback): bool
+   private function _classResolver(array $callback): bool
    {
       if (count($callback) < 2)
          /**
@@ -73,13 +73,36 @@ class Router
       return true;
    }
 
+   public function __call($name, $arguments)
+   {
+      $method = '_'.$name;
+      $this->$method(...$arguments);
+   }
+
+   public static function __callStatic($name, $arguments)
+   {
+      $instance = new self;   
+      $method = '_'.$name;
+
+      $instance->$method(...$arguments);
+   }
+
    /**
-    * TODO: Implement routing using classResolver and functionResolver.
+    * Does all the routing for you.
+    * TODO: fucntionResolver is still left.
     *
     * @return void
     */
 
-   public static function resolve()
+   public function __destruct()
    {
+      $request = new Request();
+      
+      $path = $request->path;
+      $method = $request->method;
+      $callback = self::$paths[$method][$path];
+
+      if ($callback)
+         $this->classResolver($callback);
    }
 }

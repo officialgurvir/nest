@@ -3,7 +3,8 @@
   "description": "A Next Gen PHP Framework.",
   "autoload": {
     "psr-4": {
-      "Nest\\": "core/"
+      "Nest\\": "core/",
+      "App\\": "app/"
     }
   },
   "authors": [
