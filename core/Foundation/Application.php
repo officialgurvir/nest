@@ -13,7 +13,7 @@ class Application
 
     public function terminate()
     {
-        print_array($this->environment);
+       exit;
     }
 
     public static function make(array $environment)

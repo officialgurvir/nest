@@ -30,5 +30,7 @@ require __DIR__.'/helpers/index.php';
 |--------------------------------------------------------------------------
 */
 
+require __DIR__.'/routes/web.php';
+
 $kernal = Kernal::handle(__DIR__);
 $kernal->terminate();
