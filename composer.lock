@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0064187b012ec726219a499bdd98fdd2",
+    "content-hash": "42c0f8f20c603303cd4c09a7cf04180c",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -67,6 +67,40 @@
                 }
             ],
             "time": "2021-11-21T21:41:47+00:00"
+        },
+        {
+            "name": "nest/routing",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/officialgurvir/routing.git",
+                "reference": "00ed897fa8b15381b9bf6ad1b1c2fe09f6a62617"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/officialgurvir/routing/zipball/00ed897fa8b15381b9bf6ad1b1c2fe09f6a62617",
+                "reference": "00ed897fa8b15381b9bf6ad1b1c2fe09f6a62617",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nest\\Routing\\": "core/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "officialgurvir",
+                    "email": "officialgurvir2007@gmail.com"
+                }
+            ],
+            "description": "Routing package for nest framework",
+            "support": {
+                "issues": "https://github.com/officialgurvir/routing/issues",
+                "source": "https://github.com/officialgurvir/routing/tree/v1.0.0"
+            },
+            "time": "2022-07-24T12:13:50+00:00"
         },
         {
             "name": "phpoption/phpoption",

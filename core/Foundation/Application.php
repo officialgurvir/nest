@@ -1,6 +1,6 @@
 <?php
 
-namespace Nest\Foundation;
+namespace Framework\Foundation;
 
 class Application
 {
