@@ -3,4 +3,4 @@
 use App\Controllers\HelloWorld;
 use Nest\Router;
 
-Router::get('/', [ HelloWorld::class, 'main' ]);
+Router::get('/', [HelloWorld::class, 'main']);
