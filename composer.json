@@ -1,0 +1,20 @@
+{
+  "name": "nest/nest",
+  "description": "A Next Gen PHP Framework.",
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "core/",
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Gurvir Singh Baraich",
+      "email": "officialgurvir2007@gmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.4",
+    "nest/routing": "^1.0"
+  }
+}
