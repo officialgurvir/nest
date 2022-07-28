@@ -15,6 +15,7 @@
   ],
   "require": {
     "vlucas/phpdotenv": "^5.4",
-    "nest/routing": "^1.0"
+    "nest/routing": "^1.0",
+    "jenssegers/blade": "^1.4"
   }
 }
