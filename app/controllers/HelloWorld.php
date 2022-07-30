@@ -10,14 +10,9 @@ class HelloWorld extends View
 {
     use Views;
 
-    public function main()
-    {
-        return $this->render('index');
-    }
-
     public function greet(Request $request) {
         return $this->render('index', [
-            'name' => $request->name
+            'name' => $request->name ?? ""
         ]);
     }
 }

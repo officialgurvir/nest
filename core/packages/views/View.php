@@ -11,7 +11,7 @@ class View
    public function __construct($environment)
    {
       $this->blade = new Blade(
-         $environment['__DIR__'] . '/resources/views',
+         APPLICATION_DIRECTORY . '/resources/views',
          __DIR__ . '/cache'
       );
    }

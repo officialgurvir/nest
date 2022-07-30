@@ -27,8 +27,9 @@
 </head>
 
 <body>
-    <form action="/greet" method="get">
+    <form action="" method="POST">
         <input type="text" name="name">
+        <input type="text" name="csrf_token" value="<?php echo e(csrf_token()); ?>">
         <button>Greet!</button>
     </form>
 

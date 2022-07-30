@@ -1,0 +1,22 @@
+<?php
+/**
+ * @author Gurvir Singh <officialgurvir2007@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+*/
+
+require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/helpers/index.php';
+
+use \Framework\Contracts\Kernal;
+
+$kernel = Kernal::create(
+    __DIR__,
+    $argv
+);
+
+$kernel->terminate();
