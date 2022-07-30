@@ -17,12 +17,12 @@ class Application
 
     public function terminate()
     {
-        $_ENV = [];
         $this->router->execute($this->environment);
     }
 
     public static function make(array $environment)
     {
+        session_start();
         return new self($environment);
     }
 }
