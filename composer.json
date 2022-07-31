@@ -16,6 +16,7 @@
   "require": {
     "vlucas/phpdotenv": "^5.4",
     "nest/routing": "^1.1",
-    "jenssegers/blade": "^1.4"
+    "jenssegers/blade": "^1.4",
+    "symfony/var-dumper": "^6.1"
   }
 }
